@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Request</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Submit Service Request</h1>
+    </header>
+
+    <main>
+        <form id="serviceRequestForm">
+            <label for="requestType">Request Type:</label>
+            <select id="requestType" name="requestType" required>
+                <option value="">Select</option>
+                <option value="installation">Installation</option>
+                <option value="maintenance">Maintenance</option>
+                <option value="repair">Repair</option>
+            </select>
+
+            <label for="details">Request Details:</label>
+            <textarea id="details" name="details" rows="4" required></textarea>
+
+            <label for="attachment">Attach File:</label>
+            <input type="file" id="attachment" name="attachment">
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gas Utility Company. All rights reserved.</p>
+    </footer>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
